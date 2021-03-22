@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/technicity.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <title>Technicity</title>
+</head>
+
+<body>
+
+    <!-- MENU PRINCIPAL -->
+    <div class="menu_principal">
+
+        <div class="img_index_menu">
+            <a href="index.html" target="">
+                <img src="icon/technicity.png" alt="">
+            </a>
+        </div>
+
+
+        <div class="espacio">
+            <!--<img class="" src="img/" />-->
+        </div>
+
+        <a href="proyectos.html" target="">
+            <div class="izq_menu">
+                PROYECTOS
+            </div>
+        </a>
+
+
+        <a href="blog/blog.html" target="">
+            <div>
+                <div class="izq_menu">
+                    BLOG
+                </div>
+                <div class="superblog">
+                    <a href="blog/gaming.html" target="">
+                        <div class="menu2_blog">
+                            GAMING
+                        </div>
+                    </a>
+
+                    <a href="blog/smartphones.html" target="">
+                        <div class="menu2_blog">
+                            SMARTPHONES
+                        </div>
+                    </a>
+
+                    <a href="blog/informatica.html" target="">
+                        <div class="menu2_blog">
+                            INFORMÁTICA
+                        </div>
+                    </a>
+
+
+                    <a href="blog/tarjetasgraficas.html" target="">
+                        <div class="menu2_blog">
+                            TARJETAS GRÁFICAS
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </a>
+
+
+        <a href="servicios.html" target="">
+            <div class="izq_menu">
+                SERVICIOS
+            </div>
+        </a>
+
+
+        <a href="productos.html" target="">
+            <div class="izq_menu">
+                PRODUCTOS
+            </div>
+        </a>
+
+
+        <div class="espacio2">
+            <!--<img class="" src="img/" />-->
+        </div>
+
+
+        <a href="cliente.html" target="">
+            <div class="izq_menu">
+                CLIENTE
+            </div>
+        </a>
+
+
+        <div class="cesta_menu">
+            <a class="ej" href="cesta.html" target="">
+                <img src="icon/imagencesta4.png" alt="">
+            </a>
+        </div>
+    </div>
+    
+    <!-- CONTENIDO DE LA PAGINA -->
+    <table border="0px" cellpadding="00px" cellspacing="50px" class="tablaquienessomos">
+        <tr >
+            <td colspan="2" align="center"><b>FORMULARIO DE CONTACTO</b></td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <h3>Datos</h3>
+                Nombre y Apellidos
+                <br>
+                <input type="text" name="Nombre y apellidos" size="50" placeholder="Nombre y apellidos">
+                <br><br>
+                <label for="email">Correo:</label>
+                <br>
+                <input type="email" name="email" required size="50" placeholder="nombre@ejemplo.com">
+                <br><br>
+                <label for="tel">Telefono</label>
+                <br>
+                <input type="tel" name="tel">
+                <br><br>
+                Código Postal:
+                <br>
+                <input type="text" name="Código Postal" maxlength="5" required size="50"
+                    placeholder="Código Postal">
+                <br><br>
+                <p>Calle: <input type="text" name="texto"></p>
+                <br>
+                <p>Portal: <input type="text" name="texto"></p>
+                <br>
+                <p>Número: <input type="number" maxlength="2" name="texto"></p>
+                <br>
+                <p>Piso: <input type="text" name="texto"></p>
+                <br>
+                <br><br>
+            </td>
+            <td >
+                <label for="dispositivos">¿Por qué contacta con nosotros?</label><br><br>
+                <input type="checkbox" name="contacto" value="problemas">Problemas con el envío<br>
+                <input type="checkbox" name="contacto" value="problemas">Problemas con la compra<br>
+                <input type="checkbox" name="contacto" value="queja">Tengo una queja<br>
+                <input type="checkbox" name="contacto" value="producto">No encuentro un producto<br>
+                <br><br>
+                <textarea name="Descripción" cols="60" rows="4" placeholder="Describa la incidencia..."
+                    class="textarea"></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+                <br><br>
+                Archivo adjunto del error &nbsp;<input type="file">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Contacto:</b><br> Dirección: Universidad Europea de Madrid. Campus<br>
+                    Villaviciosa de Odón. Calle Tajo S/N Villaviciosa de Odón.<br>
+                    Madrid TLF: 91 268 72 73 <br>
+                    Mail: technicity@gmail.com
+                </p>
+                <br>
+                
+            </td>
+        </tr> 
+        
+    </table>
+    
+    
+       <!-- <div class="formulario">
+        <form action="">
+            Nombre <input type="text"> <br>
+            Primer apellido <input type="text"> <br>
+            Segundo apellido <input type="text"> <br>
+            Email <input type="text"> <br>
+
+        </form>
+        </div>-->
+        <br>
+        <div class="todo_faq">
+            
+            <h2 id="FAQ">FAQ</h2>
+            
+            <div class="FAQ">
+                
+                
+                <div class="quiero_comprar">
+                    <h3>QUIERO COMPRAR</h3>
+                    
+                    <a href="javascript:uno();">
+                        <div>Como comprar</div>
+                    </a>
+                    <script type="text/javascript">
+                        function uno() {
+                        var answer = alert ("Para comprar es necesario que añadas cada uno de los productos que desees en el carrito de la compra. Una vez tengas todos los productos que deseas dirígete a la cesta de la compra y elige realizar pedido. Si ya eres cliente introduce tu usuario y contraseña, en caso contrario podrás darte de alta durante el mismo proceso. A partir de aquí se hace la compra en 2 pasos: Elegir el modo de pago y confirmar.")}
+                    </script>
+
+                    <a href="javascript:dos();">
+                        <div>¿Los precios tienen incluido el IVA?</div>
+                    </a>
+                    <script type="text/javascript">
+                        function dos() {
+                        var answer = alert ("Todos los precios vienen con el IVA incluido. Los gastos de envío no están incluidos puesto que pueden variar en función de diversas opciones que el comprador escojerá en el momento de la compra. La unica excepción será en el caso, en el que el usuario este dado de alta como distribuidor y validado por xtremmedia, en cuyo caso los precios no tendrán aplicados el iva.")}
+                    </script>
+
+                    <a href="javascript:tres();">
+                        <div>¿Se recibe una factura de la compra?</div>
+                    </a>
+                    <script type="text/javascript">
+                        function tres() {
+                        var answer = alert ("Junto al pedido se envía un albarán de entrega y/o factura. El mismo día que tenmos constancia de que está entregado puede ver e imprimir la factura desde su panel de cliente entrando con sus datos de acceso a la web.")}
+                    </script>
+
+                    <a href="javascript:cuatro();">
+                        <div>¿Dónde pueden llegar los envíos?</div>
+                    </a>
+                    <script type="text/javascript">
+                        function cuatro() {
+                        var answer = alert ("Enviamos a cualquier parte de la península Ibérica incluido Portugal, Baleares, Canarias, Ceuta y Melilla.")}
+                    </script>
+                    
+                    
+                </div>
+                <div></div>
+
+                <div class="yahe_comprado">
+                    <h3>YA HE COMPRADO</h3>
+                    <a href="javascript:cinco();">
+                        <div>Necesito modificar mi pedido</div>
+                    </a>
+                    <script type="text/javascript">
+                        function cinco() {
+                        var answer = alert ("Después de completar tu compra, aún puedes modificar tu pedido si has seleccionado forma de pago tarjeta o contra reembolso y lo puedes hacer tú personalmente. Ponemos a tu alcance una aplicación única que te permitirá añadir o quitar artículos a tu pedido, cambiar la forma de pago y la dirección de destino cómodamente. ")}
+                    </script>
+
+                    <a href="javascript:seis();">
+                        <div>Localizar mi pedido</div>
+                    </a>
+                    <script type="text/javascript">
+                        function seis() {
+                        var answer = alert ("Podrás consultar la fecha de entrega prevista, el estado del pedido, la factura proforma y solicitar la cancelación si todavía no has pagado el pedido. Si deseas cancelar un pedido, debes ponerte en contacto con nuestro Servicio de atención al cliente. Si haces clic en Seguimiento en el panel, verás el estado de tu pedido")}
+                    </script>
+
+                    <a href="javascript:siete();">
+                        <div>Garantia</div>
+                    </a>
+                    <script type="text/javascript">
+                        function siete() {
+                        var answer = alert ("Con carácter general el plazo de garantía es 2 años desde el momento de la compra. Para ello es indispensable disponer del ticket de compra, que servirá al usuario para demostrar que el producto fue comprado en un establecimiento y en él aparece la fecha en que fue adquirido")}
+                    </script>
+
+
+                    <a href="javascript:ocho();">
+                        <div>Quiero hacer una devolución</div>
+                    </a>
+                    <script type="text/javascript">
+                        function ocho() {
+                        var answer = alert ("El plazo para hacer una devolucion es de 30 días si acabas de comprar tu producto, lo has recibido y no lo quieres. 2 años si se trata de un producto que no funciona y necesitas la garantía. Hasta el 15 de enero de 2021 si realizas tus compras entre el 15 de noviembre y el 15 de diciembre de 2020 (excepto los productos digitales).")}
+                    </script>
+
+
+
+
+
+
+                </div>
+            </div>
+        
+        </div>
+    
+   
+   
+
+    <br> 
+    <hr>
+    <br>
+   
+    <script>
+        function numero(){
+            alert("Gracias por contactar con nuestro soporte técnico. En unos minutos te llamaremos!");
+        }
+        function ticket(){
+            alert("Gracias por contactar con nuestro soporte técnico. Obtendra una respuesta de 1 a 2 dias laborales");
+        }
+    </script>
+    <div class="botones1">
+        <div class="boton_llamada">
+            <div>Introduce tu numero si quieres que te llamemos en un plazo de 2 minutos</div>
+            <img src="icon/movil.png" alt="">
+            <form action="">
+                <input type="text" placeholder="69X XX XX XX">
+                <button onclick="numero()">Enviar</button>
+            </form>
+        </div>
+        
+        
+        <div class="boton_llamada">
+            <div>Pulse aqui para crear un ticket y el soporte se pondra en contacto con usted</div>
+            <img src="icon/ticket.jpg" alt="">
+            <form action="">
+                <input type="text" placeholder="Asunto">
+                <button onclick="ticket()">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="botones2"> 
+        <div class="boton_llamada">
+            <a target="_blanck5" href="https://web.whatsapp.com/">
+            <div>Pulse aqui para realizar su consulta a traves de WhatsApp</div>
+            <img src="icon/wsp.jpg" alt="">
+            </a>
+        </div>
+        
+        <div class="boton_llamada">
+            <a target="_blanck6" href="https://es-es.facebook.com/messenger">
+            <div>Pulse aqui para realizar su consulta a traves de Messenger (Facebook) </div>
+            <img src="icon/fb.jpg" alt="">
+            </a>
+        </div>
+   
+    </div>
+    
+    
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="foot_txt">
+            <a href="contacto.html" target="_blanck">Contacto</a>
+        </div>
+
+
+
+        <div class="foot_rs">
+            <a href="https://www.facebook.com/" target="_blanck"><img class="iconredes"
+                    src="icon/iconofacebook.png" /></a>
+            <div class=>
+                Facebook
+            </div>
+        </div>
+
+        <div class="foot_rs">
+            <a href="https://www.instagram.com/" target="_blanck"><img class="iconredes"
+                    src="icon/iconoinstagram.png" /></a>
+            <div class=>
+                Instagram
+            </div>
+        </div>
+        
+        <div class="foot_rs">
+            <a href="https://twitter.com/" target="_blanck"><img class="iconredes" src="icon/iconotwitter.png" /></a>
+            <div class=>
+                Twitter
+            </div>
+        </div>
+
+
+
+        <div class="foot_txt">
+            <a href="quienessomos.html" target="_blanck">Quiénes somos</a>
+        </div>
+    </div>
+</body>
+
+</html>

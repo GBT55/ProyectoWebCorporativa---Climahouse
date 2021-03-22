@@ -1,0 +1,244 @@
+/**************ESLOGAN*********************/
+
+.eslogan {
+    font-size: 30px;
+    margin: 0px auto 50px auto;
+    padding: 5px 0px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(255, 255, 255);
+    color: var(--secundario);
+    box-shadow: 3px 2px 1px 1px;
+    width: 700px;
+}
+
+
+/**************FONDO INDEX(quiero hacer que esta imagen se quede en fondo al hacer scroll)************/
+
+.FondoIndex {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin: 0px auto 50px auto;
+    overflow: hidden;
+}
+
+.FondoIndex img {
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+.slider {
+    overflow: hidden;
+    margin: 100px auto;
+    width: 1600px;
+    height: 400px;
+    box-shadow: 1px 1px 10px 6px var(--secundario);
+    padding: 0px;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    list-style: none;
+}
+
+.slider img {
+    width: 1600px;
+    height: 400px;
+    margin-left: 0px;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+/*Responsive_slider*/
+
+@media screen and (max-width:425px) {
+    .slider {
+        overflow: hidden;
+        margin: 40px auto;
+        width: 325px;
+        height: 100px;
+        box-shadow: 1px 1px 5px 2px var(--secundario);
+    }
+    .slider img {
+        width: 325px;
+        height: 100px;
+    }
+}
+
+
+/* LISTA PRODUCTOS MÁS VENDIDOS */
+
+.linea {
+    border-top: 0px solid rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.contenedor-imagenes .image {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 20px;
+    margin-bottom: 50px;
+    /* box-shadow: 0px 0px 3px 0px rgba(13, 13, 14, 0.75); */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(249, 135, 39, 0.9);
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: 500ms ease;
+}
+
+.overlay h2 {
+    color: rgb(12, 12, 12);
+    background-color: rgba(0, 255, 255, 0);
+    font-weight: 100px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-image: none;
+}
+
+.image:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+.overlay .precio {
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 2px dashed rgb(255, 255, 255);
+    margin-top: 175px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Responsive_menu*/
+
+@media screen and (max-width:425px) {
+    .izq_menu .material-icons {
+        display: none;
+    }
+    .thumb-nav {
+        background-image: none;
+        display: flex;
+        margin-left: 120px;
+        cursor: pointer;
+        background: rgb(248, 248, 248);
+    }
+    .nav-options>div {
+        z-index: 1;
+        transition: all 450ms linear;
+        background-image: none;
+    }
+    .thumb-nav .nav-options div a {
+        background: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+    }
+    .nav-open-check,
+    .nav-open-button,
+    .nav-options>div {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .nav-open-button {
+        transform: rotate(0deg);
+        transition: transform 450ms ease;
+        z-index: 2;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid var(--secundario);
+        color: rgb(255, 255, 255);
+        width: 40px;
+        background-image: none;
+        cursor: pointer;
+        background: rgb(248, 248, 248);
+    }
+    .nav-open-check {
+        opacity: 0;
+        z-index: 3;
+    }
+    .nav-open-check:checked~.nav-open-button~.nav-options>div:first-child {
+        margin-top: 200px;
+    }
+    .nav-open-check:checked~.nav-open-button~.nav-options>div:nth-child(3) {
+        margin-top: 150px;
+    }
+    .nav-open-check:checked~.nav-open-button~.nav-options>div:nth-child(2) {
+        margin-top: 100px;
+    }
+    .nav-open-check:checked~.nav-open-button~.nav-options>div:last-child {
+        margin-top: 50px;
+    }
+    .nav-open-check:checked~.nav-open-button {
+        transform: rotate(180deg)
+    }
+    .material-icons.md-36 {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        line-height: 25px;
+    }
+}
