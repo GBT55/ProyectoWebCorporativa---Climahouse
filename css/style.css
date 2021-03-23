@@ -4,13 +4,12 @@
     padding: 0%;
     font-family: 'Krub', sans-serif;
     box-sizing: border-box;
-    background-image: url(../img/bg5.jpg);
+    
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
 }
-
 
 /************VARIABLES******************/
 
@@ -46,7 +45,10 @@
     background: var(--secundario);
 }
 
-
+/****************MENU RESPONSIVE(deshabilitar)***********/
+.menu_responsive{
+    display: none;
+}
 /****************TOP MENU********************/
 
 .menu_principal {
@@ -55,9 +57,14 @@
     flex: auto;
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
-    margin-bottom: 70px;
     border: 1px solid black;
     background-image: none;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    
+    
 }
 
 .menu_principal div {
@@ -169,32 +176,90 @@ span {
 /*Responsive_menu*/
 
 @media screen and (max-width:425px) {
-    .menu_principal {
-        margin-bottom: 0px;
-    }
-    .menu_principal div {
-        height: 30px;
-        line-height: 27px;
-    }
-    .menu_principal a {
-        font-size: 10px;
-    }
-    .menu_principal div a img {
-        height: 28px;
-        width: 30px;
-    }
-    .menu_principal .espacio1 {
-        width: 0px;
-    }
-    .menu_principal .espacio2 {
-        width: 0px;
-    }
-    .menu_principal div:hover .superblog {
+    /*menu_principal se esconde*/
+    .menu_principal{
         display: none;
     }
-    .menu_principal div a img {
-        width: 55px;
+    /*****************MENU RESPONSIVE/Hamburguesa**************/
+    .menu_responsive{
+        display:block;
+        margin:0px;
+        padding: 0px;
+        background-image: none;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
+    .foto_menu_responsive{
+        position: absolute;
+        z-index: 10;
+        width: 32px;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+    .foto_menu_responsive img:hover{
+        background-color: rgb(110, 110, 235);
+        
+    }
+    .foto_menu_responsive img{
+        vertical-align: top;
+        width: 32px;
+        cursor: pointer;
+    }
+    .menu_responsive_lista{
+        box-shadow: 1px 1px 1px 1px var(--secundario);
+        width: 175px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 500ms ease;
+        padding-top: 34px;
+        background-color: #000000;
+        
+    }
+    .menu_responsive_lista ul{
+        list-style: none;
+    
+    }
+    .menu_responsive_lista ul li{
+        padding: 10px 5px;
+        background-image: none;
+        display: block;
+        font-size: 1rem;
+        background-color: #000000;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        border: 1px solid #ffffff;
+        color: white;
+
+    }
+    .menu_responsive_lista ul li:hover{
+        transition: 200ms;
+        transition-property:all ;
+        transition-delay: 100ms;
+        padding: 20px;
+        background-color: white; 
+       
+    }
+    
+    
+    .menu_responsive_lista ul a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu_responsive_lista ul a:hover{
+        color: var(--secundario);
+       
+    }
+    /*JS DEL menu hamburguesa*/
+    .activeMenuHamburguesa{
+        transform: translate(-600px);
+    }
+    .opacityMenuHamburguesa{
+        transition: all 0.5s ease;
+    }
+
 }
 
 

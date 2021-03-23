@@ -8,8 +8,9 @@
     font-family: 'Ubuntu', sans-serif;
     background: rgb(255, 255, 255);
     color: var(--secundario);
-    box-shadow: 3px 2px 1px 1px;
-    width: 700px;
+    box-shadow: 3px 2px 1px 4px;
+    width: 800px;
+    margin-top: 90px;
 }
 
 
@@ -79,25 +80,6 @@
         margin-left: -300%;
     }
 }
-
-
-/*Responsive_slider*/
-
-@media screen and (max-width:425px) {
-    .slider {
-        overflow: hidden;
-        margin: 40px auto;
-        width: 325px;
-        height: 100px;
-        box-shadow: 1px 1px 5px 2px var(--secundario);
-    }
-    .slider img {
-        width: 325px;
-        height: 100px;
-    }
-}
-
-
 /* LISTA PRODUCTOS MÁS VENDIDOS */
 
 .linea {
@@ -171,7 +153,12 @@
 /*Responsive_menu*/
 
 @media screen and (max-width:425px) {
-    .izq_menu .material-icons {
+    .eslogan{
+        width: 300px;
+        margin: 20px auto;
+    }
+    /*menu*/
+    /* .izq_menu .material-icons {
         display: none;
     }
     .thumb-nav {
@@ -239,6 +226,18 @@
         font-size: 20px;
         height: 30px;
         width: 30px;
-        line-height: 25px;
+        line-height: 25px;} */
+
+    .slider {
+        overflow: hidden;
+        margin: 40px auto;
+        width: 325px;
+        height: 100px;
+        box-shadow: 1px 1px 5px 2px var(--secundario);
     }
+    .slider img {
+        width: 325px;
+        height: 100px;
+    }
+    
 }
