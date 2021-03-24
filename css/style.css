@@ -1,10 +1,9 @@
 * {
     background-color: white;
-    margin: 0%;
+    margin: 0px;
     padding: 0%;
     font-family: 'Krub', sans-serif;
     box-sizing: border-box;
-    
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,7 +54,7 @@
     display: flex;
     flex-direction: row;
     flex: auto;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(0, 0, 0);
     border: 1px solid black;
     background-image: none;
@@ -63,8 +62,9 @@
     position: fixed;
     width: 100%;
     top: 0px;
-    
-    
+}
+.menu_principal_tienda div{
+    color: rgb(60, 255, 0);
 }
 
 .menu_principal div {
@@ -73,8 +73,6 @@
     line-height: 35px;
     background-image: none;
 }
-
-
 /*Letra_menu*/
 
 .menu_principal a {
@@ -82,25 +80,29 @@
     color: rgb(255, 255, 255);
     font-size: 14px;
     background-image: none;
+    padding:0px;
 }
 
 .menu_principal .izq_menu {
-    padding: 0px 5px;
+    padding: 0px 20px;
     text-align: center;
     background-image: none;
     text-transform: uppercase;
 }
 
+
 .menu_principal .izq_menu:hover {
     background-color: rgb(255, 255, 255);
     color: rgba(249, 135, 39);
+    font-size: 18px;
+    transition: 300ms;
+    transition-property: font-size;
 }
 
 
 /*Fotos_menu*/
-
 .menu_principal div a img {
-    height: 37px;
+    height: 40px;
     width: 95px;
     background-color: black;
     background-image: none;
@@ -125,8 +127,9 @@ span {
     display: none;
 }
 
+/** Todos los material-icons. **NO TOCAR**/
 .material-icons {
-    /** Todos los material-icons. **NO TOCAR**/
+    
     background-image: none;
 }
 
@@ -145,10 +148,13 @@ span {
 .menu_principal div:hover .superblog {
     display: flex;
 }
-
+.blog{
+    padding: 0px 0px;
+}
 .superblog {
     display: none;
     flex-direction: row;
+    padding: 0px;
 }
 
 .superblog a {
@@ -180,6 +186,7 @@ span {
     .menu_principal{
         display: none;
     }
+
     /*****************MENU RESPONSIVE/Hamburguesa**************/
     .menu_responsive{
         display:block;
@@ -195,11 +202,9 @@ span {
         z-index: 10;
         width: 32px;
         overflow: hidden;
-        border: 1px solid black;
     }
     .foto_menu_responsive img:hover{
         background-color: rgb(110, 110, 235);
-        
     }
     .foto_menu_responsive img{
         vertical-align: top;
@@ -215,11 +220,9 @@ span {
         transition: all 500ms ease;
         padding-top: 34px;
         background-color: #000000;
-        
     }
     .menu_responsive_lista ul{
         list-style: none;
-    
     }
     .menu_responsive_lista ul li{
         padding: 10px 5px;
@@ -232,7 +235,6 @@ span {
         width: 100%;
         border: 1px solid #ffffff;
         color: white;
-
     }
     .menu_responsive_lista ul li:hover{
         transition: 200ms;
@@ -240,10 +242,7 @@ span {
         transition-delay: 100ms;
         padding: 20px;
         background-color: white; 
-       
     }
-    
-    
     .menu_responsive_lista ul a{
         text-decoration: none;
         color: white;
@@ -347,8 +346,6 @@ span {
 
 
 /*Banner foto pagina blogs*/
-
-.banners {}
 
 .banners img {
     width: 100%;

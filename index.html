@@ -30,17 +30,22 @@
 
     <!-- MENU PRINCIPAL -->
     <nav class="menu_principal">
-
-            <div class="img_index_menu">
-                <a href="index.html" target="">
-                    <img src="icon/logo_climahouse.png" alt="">
-                </a>
+        
+        <div class="img_index_menu">
+            <a href="index.html" target="">
+                <img src="icon/logo_climahouse.png" alt="">
+            </a>
+        </div>
+        
+        <a href="index.html" id="index">
+            <div class="izq_menu index">
+                Inicio
             </div>
-
+        </a>
 
 
             <a href="nuestraempresa.html" target="">
-                <div class="izq_menu">
+                <div class="izq_menu nuestraempresa">
                     Nuestra empresa
                 </div>
             </a>
@@ -50,7 +55,7 @@
                     Ofertas Climahouse
                 </div>
             </a>
-            <a href="proyectos.html" target="">
+            <a href="INCAB.html" target="">
                 <div class="izq_menu">
                     INCAB S.L.
                 </div>
@@ -66,6 +71,7 @@
                     Ingeniería y asesoramiento técnico
                 </div>
             </a>
+        
             <a href="servicios.html" target="">
                 <div class="izq_menu">
                     Servicios
@@ -74,7 +80,7 @@
 
 
             <!--Superblog-->
-            <a href="blog/blog.html" target="">
+            <a href="blog/blog.html" class="blog">
                 <div>
                     <div class="izq_menu">
                         Blog
@@ -114,9 +120,9 @@
 
             </a>
 
-            <a href="productos.html" target="">
+            <a href="tienda.html" class="menu_principal_tienda">
                 <div class="izq_menu">
-                    Productos
+                    tienda
                 </div>
             </a>
 
@@ -241,13 +247,20 @@
     </header>
     
     <main>
-
-        <p class="eslogan">
-            Bienvenid@ a su tienda de aire acondicionado y calefacción
-        </p>
-        <div class="FondoIndex">
-            <img src="img/fondoindex.jpg">
-        </div>
+        <section class="eslogan">
+            <h1>
+                Climahouse
+            </h1>
+            <h2>
+                Bienvenid@ a su tienda de aire acondicionado y calefacción
+            </h2>    
+        </section>
+        
+        <section class="boton_tienda">
+            <a href="productos.html">
+                <div>IR DIRECTAMENTE A TIENDA</div>
+            </a>
+        </section>
         <!--SLIDER-->
         <div class="slider">
             <ul>
@@ -259,9 +272,7 @@
             </ul>
         </div>
 
-
-
-
+        <section>
         <!--LISTA DE PRODUCTOS MÁS VENDIDOS-->
         <div class="galeria">
             <h2 class="titlelistaindex">Productos mas vendidos</h2>
