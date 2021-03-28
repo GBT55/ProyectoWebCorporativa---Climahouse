@@ -1,4 +1,3 @@
-<!--Aaron 03-03-21-->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -28,20 +27,41 @@
 
 <body>
 
-    <!-- MENU PRINCIPAL -->
-    <nav class="menu_principal">
+    <header>
+
+        <nav class="top_menu uno">
+
+            <section class="busca">
+                
+            </section>
+            <section class="img_index_menu">
+                <a href="index.html">
+                    <img src="icon/logo_climahouse.png" >
+                </a>
+            </section>
+            <section class="direccion_menu">
+                
+                <div class="dir_menu-izq">
+                    <a href="https://goo.gl/maps/VSDfZsQzQ3ZqYvyT7" target="blank5"><img src="icon/maps.png" ></a>
+                </div>
+                
+                <div class="dir_menu-der">
+                    <p class="uno">Avenida de los Carabancheles, 7</p>
+                    <p class="dos">28921, Alcorcon </p>
+                    <p class="tres"><img src="icon/tlf.png">916 19 58 64</p>
+                    <p class="cuatro"><img src="icon/mail.png">climahouse@hotmail.es</p>
+                </div>    
+            
+            </section>
+
+        </nav>
         
-        <div class="img_index_menu">
-            <a href="index.html" target="">
-                <img src="icon/logo_climahouse.png" alt="">
+        <nav class="top_menu dos">
+            <a href="index.html" id="index">
+                <div class="izq_menu index">
+                    Inicio
+                </div>
             </a>
-        </div>
-        
-        <a href="index.html" id="index">
-            <div class="izq_menu index">
-                Inicio
-            </div>
-        </a>
 
 
             <a href="nuestraempresa.html" target="">
@@ -138,8 +158,9 @@
             </span>
             </a>
 
-    </nav>
-    <nav class="menu_responsive">
+        </nav>
+        
+        <nav class="menu_responsive">
         
         <div class="foto_menu_responsive">
             <img src="img/icon_burger.png" id="fotoMenuHamburguesa">
@@ -199,10 +220,9 @@
         
         <script src="js/index.js">
         </script>
-    </nav>
-    
-    <header>
-        <section class="float_button">
+        </nav>  
+        
+        <nav class="float_button">
             <div class="thumb-nav">
                 <input type="checkbox" class="nav-open-check">
                 <div class="nav-open-button">
@@ -243,53 +263,62 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </nav>
     </header>
     
     <main>
         <section class="eslogan">
-            <h1>
-                Climahouse
-            </h1>
-            <h2>
-                Bienvenid@ a su tienda de aire acondicionado y calefacción
-            </h2>    
+            
+            <div class="fondo_contenido_eslogan">
+                <div class="contenido_eslogan">
+                    <h1>
+                        Climahouse
+                    </h1>
+                    <h2>
+                        Bienvenid@ a su tienda de aire acondicionado y calefacción
+                    </h2>
+                </div>
+            </div>    
         </section>
         
         <section class="boton_tienda">
-            <a href="productos.html">
-                <div>IR DIRECTAMENTE A TIENDA</div>
+            <a class="boton tienda" href="productos.html">
+                Ir directamente a tienda
             </a>
         </section>
-        <!--SLIDER-->
-        <div class="slider">
-            <ul>
-                <li><img src="img/slider/1.jpg" alt=""></li>
-                <li><img src="img/slider/2.jpg" alt=""></li>
-                <li><img src="img/slider/3.jpg" alt=""></li>
-                <li><img src="img/slider/4.jpg" alt=""></li>
-                <li><img src="img/slider/5.jpg" alt=""></li>
-            </ul>
-        </div>
 
-        <section>
-        <!--LISTA DE PRODUCTOS MÁS VENDIDOS-->
-        <div class="galeria">
-            <h2 class="titlelistaindex">Productos mas vendidos</h2>
-            <br>
-            <div class="contenedor-imagenes">
-                <div class="image">
-                    <img src="img/imagencorei7.jpg" alt="">
-
-                    <div class="overlay">
-                        <a href="cesta.html">
-                            <h2>Intel Core i7-7800X 3.5Ghz BOX <br>
-                                <div class="precio"> 299,90€</div>
-                            </h2>
-                        </a>
-                    </div>
+        <section class="s_slider">
+            <div class="slider">
+                <ul>
+                    <li><img src="img/slider/1.jpg" alt=""></li>
+                    <li><img src="img/slider/2.jpg" alt=""></li>
+                    <li><img src="img/slider/3.jpg" alt=""></li>
+                    <li><img src="img/slider/4.jpg" alt=""></li>
+                    <li><img src="img/slider/5.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="s_prodmasvendidos">
+            <h1>Productos mas vendidos</h1>
+            
+            <section class="prodmasvendidos">
+                <div class="item">
+                    <a class="item img" href=""><img src="img/imagencorei7.jpg"></a>
+                    <a class="item nombre" href="*.html">Intel Core i7-7800X 3.5Ghz BOX</a>
+                    <a class="item precio" href="">299,90€</a> 
+                    <a class="item añadir" href="cesta.html" >Añadir a la cesta</a> 
+                </div>
+                <div class="item">
+                    <a class="item img" href=""><img src="img/imagencorei7.jpg"></a>
+                    <a class="item nombre" href="*.html">Intel Core i7-7800X 3.5Ghz BOX</a>
+                    <a class="item precio" href="">299,90€</a> 
+                    <a class="item añadir" href="cesta.html" >Añadir a la cesta</a> 
                 </div>
 
+                   
+               
+                <!-- 
                 <div class="image">
                     <img src="img/imagenmsi.jpg" alt="">
 
@@ -348,17 +377,55 @@
                                 <div class="precio"> 109€</div>
                             </h2>
                         </a>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
 
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
     
     <footer>
-        <div class="footer">
+        <section class="footer">
+            <div class="footer_rs-titulo">
+                Redes sociales
+            </div>
+            
+            <div class="footer-redes_sociales">
+               
+                
+                <div class="footer-redes_sociales a" >
+                    <a href="https://www.facebook.com/" target="_blanck10">
+                        <img class="iconredes" src="icon/iconofacebook.png" />
+                        <p>Facebook</p>
+                    </a>
+               </div>
+               
+               <div class="footer-redes_sociales b">
+                    <a href="https://www.instagram.com/" target="_blanck11">
+                        <img class="iconredes" src="icon/iconoinstagram.png" />
+                        <p>Instagram</p>
+                    </a>
+               </div>
+               
+               <div class="footer-redes_sociales c">
+                    <a href="https://twitter.com/" target="_blanck12">
+                        <img class="iconredes" src="icon/iconotwitter.png" />
+                        <p>Twitter</p>
+                    </a>
+               </div>
+            
+            </div>
+            
+            <div class="footer-txt">
+                <ul>    Contacto
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
 
-            <div class="foot_txt">
+            <!-- <div class="foot_txt">
                 <a href="contacto.html" target="_blanck">Contacto</a>
             </div>
 
@@ -389,9 +456,9 @@
 
             <div class="foot_txt">
                 <a href="quienessomos.html" target="_blanck">Quiénes somos</a>
-            </div>
+            </div> -->
 
-        </div>
+        </section>
     </footer>
 
 </body>

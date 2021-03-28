@@ -1,6 +1,5 @@
 * {
-    background-color: white;
-    margin: 0px;
+    margin: 0%;
     padding: 0%;
     font-family: 'Krub', sans-serif;
     box-sizing: border-box;
@@ -9,12 +8,14 @@
     background-position: center;
     background-size: 100% 100%;
 }
+main{
+    background-image: linear-gradient(to bottom, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);;
+}
 
 /************VARIABLES******************/
 
 :root {
-    --primario;
-    #000000;
+    --primario:#000000;
     --secundario: rgb(255, 123, 0);
 }
 
@@ -44,13 +45,85 @@
     background: var(--secundario);
 }
 
+
 /****************MENU RESPONSIVE(deshabilitar)***********/
 .menu_responsive{
     display: none;
 }
-/****************TOP MENU********************/
+/****************TOP MENU 1********************/
+.top_menu.uno{
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(255, 255, 255);
+    display:flex;   
+    justify-content: space-between;
+}
 
-.menu_principal {
+/*Logo menu 1*/
+.img_index_menu{
+    width: 150px;
+    height: 60px;
+    
+    
+    
+}
+.img_index_menu img{
+    width:140px;
+    height: 60px;
+    padding: 5px 0px ;
+  
+    
+}
+
+/*Direccion Menu1*/
+.direccion_menu{
+    height: 60px;
+    display: flex;
+}
+.direccion_menu .dir_menu-izq{
+    width:300px ;
+    height: 60px;
+    border-right: 0px solid black;
+    text-align: right;
+    background: none;
+    line-height: 60px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.direccion_menu .dir_menu-izq img{
+    width: 35px;
+    cursor: pointer;
+    margin: 10px 0px;
+
+}
+.direccion_menu .dir_menu-der{
+    padding: 4px;
+    width: 250px;
+    height: 60px;
+    background: none;
+    line-height: 0px;
+    margin-right: 100px;
+}
+.direccion_menu .dir_menu-der  p{
+    border-left: 1px solid black;
+    height: 12px;
+    font-size: 13px;
+    padding: 5px 15px;
+    font-family: ubuntu;
+}
+.direccion_menu .dir_menu-der p img{
+    width: 10px;
+}
+/*Menu burger top*/
+.menu_burg-top{
+    
+}
+
+/****************TOP MENU 2********************/
+.top_menu.dos{
     display: flex;
     flex-direction: row;
     flex: auto;
@@ -58,16 +131,15 @@
     background-color: rgb(0, 0, 0);
     border: 1px solid black;
     background-image: none;
-    position: relative;
-    position: fixed;
     width: 100%;
     top: 0px;
+    
 }
-.menu_principal_tienda div{
+.top_menu_tienda div{
     color: rgb(60, 255, 0);
 }
 
-.menu_principal div {
+.top_menu div {
     background-color: black;
     height: 40px;
     line-height: 35px;
@@ -75,7 +147,7 @@
 }
 /*Letra_menu*/
 
-.menu_principal a {
+.top_menu.dos a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 14px;
@@ -83,7 +155,7 @@
     padding:0px;
 }
 
-.menu_principal .izq_menu {
+.top_menu.dos .izq_menu {
     padding: 0px 20px;
     text-align: center;
     background-image: none;
@@ -91,17 +163,14 @@
 }
 
 
-.menu_principal .izq_menu:hover {
+.top_menu.dos .izq_menu:hover {
     background-color: rgb(255, 255, 255);
-    color: rgba(249, 135, 39);
-    font-size: 18px;
-    transition: 300ms;
-    transition-property: font-size;
+    color: grey;
 }
 
 
 /*Fotos_menu*/
-.menu_principal div a img {
+.top_menu.dos div a img {
     height: 40px;
     width: 95px;
     background-color: black;
@@ -141,11 +210,11 @@ span {
     overflow: hidden;
 }
 
-.menu_principal div:hover .material-icons {
+.top_menu.dos div:hover .material-icons {
     display: none;
 }
 
-.menu_principal div:hover .superblog {
+.top_menu.dos div:hover .superblog {
     display: flex;
 }
 .blog{
@@ -183,12 +252,12 @@ span {
 
 @media screen and (max-width:425px) {
     /*menu_principal se esconde*/
-    .menu_principal{
+    .top_menu{
         display: none;
     }
 
     /*****************MENU RESPONSIVE/Hamburguesa**************/
-    .menu_responsive{
+    .menu_responsive, .menu_burg-top{
         display:block;
         margin:0px;
         padding: 0px;
@@ -260,26 +329,62 @@ span {
     }
 
 }
-
+/***************BOTON-DE-USO-GENERAL**********************/
+.boton{
+    text-decoration: none;
+    background-color: var(--secundario);
+    color: rgb(255, 255, 255);
+    padding: 0.7rem 2rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    border: 0px solid rgb(0, 0, 0);
+    text-align: center;
+}
 
 /*************FOOTER*********************/
 
 .footer {
+    height: 500px;
+    margin-top: 10px;
+}
+.footer .footer_rs-titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom: black 1px solid;
+
+}
+.footer .footer-redes_sociales{
+    height: 100px;
+    padding: 0px 50px;
     display: flex;
-    flex-direction: row;
-    flex: 1;
     justify-content: center;
-    align-items: flex-end;
-    height: 50px;
-    background-color: rgb(12, 12, 12);
-    position: relative;
-    margin-top: 200px;
-    background-image: none;
+}
+.footer .footer-redes_sociales a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.footer .footer-redes_sociales img{
+    width: 40px;
+    margin: 0px auto;
+}
+.footer .footer-txt{
+    height: 400px;
+    background-color: grey;
+   
+
+}
+.footer .footer-txt ul{
+    background-color: grey;
+    font-size: 30px;
+}
+.footer .footer-txt ul li{
+    background-color: grey;
+    font-size: 20px;
 }
 
-.footer div {
-    padding-inline: 25px;
-}
 
 
 /* TEXTOS */
@@ -309,19 +414,6 @@ span {
     display: block;
 }
 
-
-/*POSICIÓN TITULO PRODUCTOS: INDEX*/
-
-.titlelistaindex {
-    text-align: center;
-}
-
-
-/*POSICIÓN TITULOS PRODUCTOS: PRODUCTOS*/
-
-.productos {
-    text-align: center;
-}
 
 .image button {
     background-color: rgb(0, 0, 0);
@@ -806,35 +898,13 @@ hr {
 /*----------------------MEDIAS QUERY---------------------------------*/
 
 @media screen and (max-width:1034px) {
-    .contenedor-imagenes {
-        width: 100%;
-        margin: 50px;
-    }
-    .contenedor-imagenes .image {
-        width: 250px;
-        height: 250px;
-    }
-    .contenedor-imagenes .image img {
-        width: 250px;
-        height: 250px;
-    }
-    .overlay .precio {
-        margin-top: 15px;
-    }
+   
 }
 
 @media screen and (max-width:768px) {
-    .contenedor-imagenes {
-        width: 100%;
-        margin: 5px;
-        justify-content: space-between;
-    }
-    .contenedor-imagenes .image {
-        width: 380px;
-        margin: 0px;
-    }
+  
     .footer {
-        height: 40px;
+        height: 200px;
     }
     .footer div {
         padding-inline: 5px;
@@ -852,20 +922,7 @@ hr {
 }
 
 @media screen and (max-width:425px) {
-    .contenedor-imagenes {
-        width: 100%;
-        margin: 0px;
-        justify-content: center;
-    }
-    .contenedor-imagenes .image {
-        width: 150px;
-        height: 150px;
-        margin: 0px
-    }
-    .contenedor-imagenes .image img {
-        width: 150px;
-        height: 150px;
-    }
+   
     .overlay .precio {
         margin-top: 5px;
         width: 80px;
@@ -916,12 +973,7 @@ hr {
 }
 
 @media screen and (max-width:321px) {
-    .contenedor-imagenes {
-        width: 100%;
-    }
-    .contenedor-imagenes .image {
-        width: 50%;
-    }
+    
 }
 
 
@@ -962,11 +1014,6 @@ hr {
         font-size: 15px;
     }
 }
-
-
-}
-
-}
 @media screen and (max-width:320px) {
     .imagenes img {
         margin-left: auto;
@@ -981,8 +1028,6 @@ hr {
 }
 .precioProductos .textoCesta {
     margin-bottom: 270px;
-}
-
 }
 .tablaquienessomos {
     margin-left: auto;

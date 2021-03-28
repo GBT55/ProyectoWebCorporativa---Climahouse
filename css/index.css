@@ -1,23 +1,31 @@
 /**************ESLOGAN*********************/
-#index{
-    
-}
 .eslogan{
     width: 100%;
     height: 700px;
     background-image: url(../img/fondoindex.jpg) ;
-    opacity: 1;
     background-size:cover ;
     background-repeat: no-repeat;
-    margin-top: 40px;
     background-position:center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.fondo_contenido_eslogan{
+    /* background-color:rgba(235, 233, 249, 0.575);; */
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.contenido_eslogan{
+    position: absolute;
+    background: none;
+    top:12rem;
+    right: 5rem;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
 }
 .eslogan h1{
     background: none;
-    width: 60%;
-    height: 200px;
-    margin:auto;
-    padding-top: 200px;
     font-family: ubuntu ;
     text-shadow: rgb(0, 0, 0) 1px 2px 5px;
     text-transform: uppercase;
@@ -36,61 +44,27 @@
 }
 .eslogan h2{
     background: none;
-    width: 60%;
-    height: 200px;
-    margin:auto;
-    padding-top: 200px;
     font-size: 40px;
     color: var(--secundario);
     text-shadow: rgb(0, 0, 0) 1px 2px 5px;
     text-transform: uppercase;
     text-align: center;
 }
-.menu_principal .index{
+.top_menu.dos .index{
     border-bottom: 3px solid var(--secundario);
 }
 
-
-/**************FONDO INDEX(quiero hacer que esta imagen se quede en fondo al hacer scroll)************/
-
-/* .FondoIndex {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    margin: 0px auto 50px auto;
-    overflow: hidden;
-    opacity: 0.5;
-} */
+/*Boton en INDEX*/
 .boton_tienda{
-    margin: 10px auto;
-    width: 300px;
+    justify-content: center;
+    display: flex;
 }
-.boton_tienda a{
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-    text-align: center;
+.boton.tienda{
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
-.boton_tienda a:hover{
-    color: rgb(0, 255, 0);
-    font-size: 25px;
-    
-}
-.boton_tienda a div{
-    width: 300px;
-    background-color: black;
-    border: 1px solid black;
-    padding: 5px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-
-}
-.boton_tienda a div:hover{
-    transition: 400ms;
-    width: 400px;
-    
-}
-
-
+/*******************SLIDER***************/
 .slider {
     overflow: hidden;
     margin: 50px auto;
@@ -141,74 +115,68 @@
         margin-left: -300%;
     }
 }
-/* LISTA PRODUCTOS MÁS VENDIDOS */
-
-.linea {
-    border-top: 0px solid rgb(0, 0, 0);
-    margin-bottom: 40px;
+/*****PRODUCTOS-MAS-VENDIDOS*****/
+.s_prodmasvendidos{
+    margin: 0rem 0rem;
+    padding-bottom:2rem ;
+    
 }
-
-.contenedor-imagenes {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    border-radius: 3px;
-}
-
-.contenedor-imagenes .image {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    margin: 20px;
-    margin-bottom: 50px;
-    /* box-shadow: 0px 0px 3px 0px rgba(13, 13, 14, 0.75); */
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0px;
-    background: rgba(249, 135, 39, 0.9);
-    height: 0px;
-    width: 100%;
-    overflow: hidden;
-    transition: 500ms ease;
-}
-
-.overlay h2 {
-    color: rgb(12, 12, 12);
-    background-color: rgba(0, 255, 255, 0);
-    font-weight: 100px;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.s_prodmasvendidos h1{
     text-align: center;
-    transform: translate(-50%, -50%);
-    background-image: none;
+   
 }
-
-.image:hover .overlay {
-    height: 100%;
-    cursor: pointer;
+.prodmasvendidos{
+    width: 65%;
+    box-shadow:-6px -5px 8px 1px rgba(179,233,242,1);
+    background: rgba(255, 255, 255, 0.7);
+    margin:auto;
+    padding:3rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    border-radius: .5rem;
+    
 }
-
-.overlay .precio {
-    background: rgb(0, 0, 0);
+.item{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 30px 30px 30px;
+    line-height:30px;
+    text-decoration: none;
+    color: black;
+   
+}
+.item img{
+    width: 300px;
+    border-radius: .5rem;
+}
+.item.nombre{
+    text-align: center;
+}
+.item.añadir{
+    height: 30px;
+    text-align: center;
     color: white;
-    border: 2px dashed rgb(255, 255, 255);
-    margin-top: 175px;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    background: var(--secundario);
+    border:1px solid black ;
+    border-radius:.3rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Responsive_menu*/
