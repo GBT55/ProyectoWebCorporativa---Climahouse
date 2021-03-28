@@ -16,7 +16,7 @@ body{
     box-shadow:-6px -5px 8px 1px rgba(179,233,242,1);
     background: rgba(255, 255, 255, 0.7);
     margin:auto;
-    padding:2rem 5rem;
+    padding:0rem 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 450px);
@@ -25,15 +25,15 @@ body{
 .item{
     margin:auto;
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 300px 30px 30px 30px;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px repeat(3, 30px);
     line-height:30px;
     text-decoration: none;
     color: black;
    
 }
 .item img{
-    width: 300px;
+    width: 250px;
     border-radius: .5rem;
 }
 .item.nombre{

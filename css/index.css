@@ -68,7 +68,7 @@
 .slider {
     overflow: hidden;
     margin: 50px auto;
-    width: 1600px;
+    width: 1366px;
     height: 400px;
     box-shadow: 1px 1px 10px 6px var(--secundario);
     padding: 0px;
@@ -84,9 +84,9 @@
 }
 
 .slider img {
-    width: 1600px;
+    width: 1366px;
     height: 400px;
-    margin-left: 0px;
+    margin: auto;
 }
 
 @keyframes cambio {

@@ -118,9 +118,7 @@ main{
     width: 10px;
 }
 /*Menu burger top*/
-.menu_burg-top{
-    
-}
+
 
 /****************TOP MENU 2********************/
 .top_menu.dos{
@@ -345,7 +343,7 @@ span {
 
 .footer {
     height: 500px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .footer .footer_rs-titulo{
     text-align: center;
@@ -370,17 +368,17 @@ span {
     width: 40px;
     margin: 0px auto;
 }
-.footer .footer-txt{
+.footer_txt .footer-txt{
     height: 400px;
     background-color: grey;
    
 
 }
-.footer .footer-txt ul{
+.footer_txt .footer-txt ul{
     background-color: grey;
     font-size: 30px;
 }
-.footer .footer-txt ul li{
+.footer_txt .footer-txt ul li{
     background-color: grey;
     font-size: 20px;
 }
